@@ -1,0 +1,31 @@
+{
+  "name": "getters-to-props",
+  "main": "src/getters-to-props.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/AndersDJohnson/gettersToProps.js",
+  "authors": [
+    "Anders D. Johnson"
+  ],
+  "description": "Get simple properties from object of getters.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "getter",
+    "getters",
+    "property",
+    "properties",
+    "object",
+    "objects"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
