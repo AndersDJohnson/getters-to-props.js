@@ -42,7 +42,13 @@
           if (parsed) {
             var prop = parsed[1];
             prop = firstToLower(prop);
-            props[prop] = val();
+            try {
+              props[prop] = val();
+            }
+            catch (e) {
+              // undefined indicates error calling getter with no arguments
+              props[prop] = undefined;
+            }
           }
         }
         else {

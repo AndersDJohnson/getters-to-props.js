@@ -11,12 +11,16 @@ props = gettersToProps({
   getMore: function () {
     return { another: 'yep' };
   },
-  notMe: 'nope'
+  notMe: 'nope',
+  getFailure: function () {
+    throw new Error("oops");
+  }
 });
 
 console.log(props);
 
 assert.deepEqual(props, {
   thing: 1,
-  more: { another: 'yep' }
+  more: { another: 'yep' },
+  failure: undefined
 });
