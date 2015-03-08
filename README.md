@@ -27,12 +27,16 @@ var props = gettersToProps({
   getMore: function () {
     return { another: 'yep' };
   },
-  notMe: 'nope'
+  notMe: 'nope',
+  getFailure: function () {
+    throw new Error("oops");
+  }
 });
 
 // props is now:
-// {
-//   thing: 1,
-//   more: { another: 'yep' }
-// }
+{
+  thing: 1,
+  more: { another: 'yep' },
+  failure: undefined
+}
 ```
