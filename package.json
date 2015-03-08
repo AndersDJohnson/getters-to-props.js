@@ -1,6 +1,6 @@
 {
   "name": "getters-to-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get simple properties from object of getters.",
   "main": "index.js",
   "directories": {
