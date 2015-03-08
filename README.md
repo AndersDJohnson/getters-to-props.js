@@ -16,7 +16,7 @@ bower install --save getters-to-props
 
 ## Use
 
-```
+```js
 var gettersToProps = require('getters-to-props');
 
 var props = gettersToProps({
