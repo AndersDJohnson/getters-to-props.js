@@ -15,8 +15,11 @@
   },
   "keywords": [
     "getter",
+    "getters",
+    "property",
     "properties",
-    "object"
+    "object",
+    "objects"
   ],
   "author": "Anders D. Johnson",
   "license": "ISC",
