@@ -12,9 +12,9 @@
 }(this, function () {
 
     var isFunction = function (obj) {
-      console.log('obj:', obj);
+      // console.log('obj:', obj);
       var str = Object.prototype.toString.call(obj);
-      console.log('str:', str);
+      // console.log('str:', str);
       return str === '[object Function]';
     };
 
@@ -28,7 +28,7 @@
     };
 
     var gettersToProps = function (obj) {
-      console.log('obj:', obj);
+      // console.log('obj:', obj);
       if (! obj) {
         return;
       }
@@ -38,7 +38,7 @@
         var val = obj[key];
         if (isFunction(val)) {
           var parsed = parseFunctionName(key);
-          console.log(parsed);
+          // console.log(parsed);
           if (parsed) {
             var prop = parsed[1];
             prop = firstToLower(prop);
@@ -46,7 +46,7 @@
           }
         }
         else {
-          console.log('Not a function: ' + key);
+          // console.log('Not a function: ' + key);
         }
       }
       return props;
