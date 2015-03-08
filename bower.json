@@ -2,7 +2,7 @@
   "name": "getters-to-props",
   "main": "src/getters-to-props.js",
   "version": "1.0.0",
-  "homepage": "https://github.com/AndersDJohnson/gettersToProps.js",
+  "homepage": "https://github.com/AndersDJohnson/getters-to-props.js",
   "authors": [
     "Anders D. Johnson"
   ],
