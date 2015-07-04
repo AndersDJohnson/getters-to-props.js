@@ -27,7 +27,8 @@
     return name.match(/get(.+)/);
   };
 
-  var gettersToProps = function (obj) {
+  var gettersToProps = function (obj, opts) {
+    opts = opts || {};
     // console.log('obj:', obj);
     if (! obj) {
       return;
@@ -53,6 +54,9 @@
       }
       else {
         // console.log('Not a function: ' + key);
+        if (opts.others) {
+          props[key] = val;
+        }
       }
     }
     return props;

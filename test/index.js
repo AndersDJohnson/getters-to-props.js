@@ -1,9 +1,7 @@
 var gettersToProps = require('..');
 var assert = require('assert');
 
-var props;
-
-props = gettersToProps({
+var obj = {
   getThing: function () {
     return 1;
   },
@@ -15,12 +13,23 @@ props = gettersToProps({
   getFailure: function () {
     throw new Error("oops");
   }
-});
+};
 
-console.log(props);
+props = gettersToProps(obj);
 
 assert.deepEqual(props, {
   thing: 1,
   more: { another: 'yep' },
   failure: undefined
+});
+
+props = gettersToProps(obj, {
+  others: true
+});
+
+assert.deepEqual(props, {
+  thing: 1,
+  more: { another: 'yep' },
+  failure: undefined,
+  notMe: 'nope'
 });
